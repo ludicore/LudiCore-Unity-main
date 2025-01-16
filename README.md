@@ -4,10 +4,6 @@ LudiCore is an editor tool that gives you an AI game dev assistant directly in y
 
 Great for prototyping quickly, generating code, and debugging effortlessly!
 
-# Installing LudiCore
-
-To install this package, follow the instructions in the respective [Extension Download Guide](https://app.LudiCore.ai/plugins)
-
 # Requirements
 
 This version of the package is compatible with Unity Editor 2022.3 and later.
