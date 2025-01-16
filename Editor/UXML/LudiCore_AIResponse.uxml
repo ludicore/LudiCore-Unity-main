@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="ResponseContainer" style="margin-top: 15px; margin-bottom: 5px; margin-left: 12px; margin-right: 12px;">
+        <ui:VisualElement name="HeaderHolder" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="AIChatIconHolder" style="flex-grow: 0; width: 24px; height: 24px; align-self: flex-start; margin-left: 0; margin-bottom: 10px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+                <ui:VisualElement name="AIChatIcon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_ProfileButtonIcon&apos;);" />
+            </ui:VisualElement>
+            <ui:Button text="Exceute" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExecuteButton" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MessageContainer" style="flex-grow: 0; flex-shrink: 1; align-self: flex-start; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; flex-direction: column;" />
+        <ui:VisualElement name="FeedbackWidgets" style="flex-grow: 1; flex-direction: row; padding-top: 8px; padding-bottom: 8px; overflow: hidden; width: 100%; display: none;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CopyResponseButton" tooltip="View Chat History" style="padding-top: 4px; padding-right: 0; padding-bottom: 4px; padding-left: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(88, 88, 88, 0); margin-right: 10px; margin-left: 0; display: none;">
+                <ui:VisualElement name="CopyIcon" class="button-icon" style="flex-grow: 1; width: 15px; height: 17px; background-image: resource(&apos;Icons/IndieBuff_CopyIcon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThumbsUpButton" tooltip="Response was accurate" class="feedback-button" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-right: 4px;">
+                <ui:VisualElement name="ThumbsUpIcon" class="button-icon" style="flex-grow: 1; width: 15px; height: 17px; background-image: resource(&apos;Icons/IndieBuff_ThumbsUpIcon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThumbsDownButton" tooltip="Response wasn&apos;t great" class="feedback-button" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+                <ui:VisualElement name="ThumbsDownIcon" class="button-icon" style="flex-grow: 1; width: 15px; height: 17px; background-image: resource(&apos;Icons/IndieBuff_ThumbsDownIcon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

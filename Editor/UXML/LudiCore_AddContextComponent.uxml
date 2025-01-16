@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="AddContextRoot" class="root-container" style="justify-content: center; align-items: center;">
+        <ui:VisualElement name="DropZone" class="drop-zone-styling" />
+        <ui:VisualElement name="InfoLabelsRoot" picking-mode="Ignore" style="font-size: 14px;">
+            <ui:Button text="Click here to add selected items" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SelectItemsButton" enable-rich-text="true" class="select-items-button" style="margin-top: 0; margin-right: 3px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 2px; padding-bottom: 0; padding-left: 2px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); font-size: 14px; color: rgb(163, 131, 255);" />
+            <ui:Label tabindex="-1" text="OR" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OrLabel" picking-mode="Ignore" style="-unity-text-align: upper-center; margin-top: 10px; margin-bottom: 10px;" />
+            <ui:Label tabindex="-1" text="Drag and drop &#10;items relevant to your chat" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DragDropLabel" picking-mode="Ignore" class="drag-drop-label" style="margin-top: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

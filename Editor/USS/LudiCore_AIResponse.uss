@@ -1,0 +1,300 @@
+#ResponseContainer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--unity-colors-button-background);
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-self: flex-start;
+    padding-bottom: 0;
+}
+
+#MessageContainer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#FeedbackWidgets {
+    border-top-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: var(--unity-colors-window-background);
+    border-bottom-color: rgb(0, 0, 0);
+    align-items: flex-start;
+}
+
+.button-icon {
+    -unity-background-image-tint-color: var(--unity-colors-default-text);
+}
+
+#AIChatIconHolder {
+    background-color: rgb(111, 66, 239);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: var(--unity-colors-window-background);
+    border-right-color: var(--unity-colors-window-background);
+    border-top-color: var(--unity-colors-window-background);
+    border-bottom-color: var(--unity-colors-window-background);
+}
+
+.message-text {
+    white-space: normal;
+    flex-shrink: 1;
+    font-size: 12px;
+    color: var(--unity-colors-default-text);
+    margin-bottom: 1px;
+    width: auto;
+}
+
+.message-text .unity-base-text-field__input {
+    flex-grow: 0;
+    padding: 0;
+}
+
+.unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+
+.code-inline {
+    padding-top: 1px;
+    padding-right: 0;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: rgb(179, 153, 255);
+    background-color: rgb(63, 63, 63);
+    -unity-font: resource('Fonts/IndieBuff_CourierPrimeFont');
+    -unity-font-definition: initial;
+}
+
+.code-inline .unity-base-text-field__input {
+    flex-grow: 0;
+    padding: 0;
+    color: rgb(179, 153, 255);
+}
+
+.code-block {
+    -unity-font: resource('Fonts/IndieBuff_CourierPrimeFont');
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: rgba(210, 210, 210, 0.32);
+    border-top-color: rgba(210, 210, 210, 0.32);
+    border-bottom-color: rgba(210, 210, 210, 0.32);
+    border-left-color: rgba(210, 210, 210, 0.32);
+    -unity-font-definition: initial;
+    font-size: 12px;
+}
+
+.line-container {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.copy-button {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    -unity-background-scale-mode: scale-to-fit;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 20px;
+    height: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.copy-button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.copy-button-icon {
+    flex-grow: 1;
+    background-image: resource('Icons/IndieBuff_CopyIcon');
+    width: 100%;
+    height: 100%;
+}
+
+.copy-button:active {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+
+.insert-button {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    -unity-background-scale-mode: scale-to-fit;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 22px;
+    height: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: auto;
+    position: absolute;
+    top: 5px;
+    right: 28px;
+}
+
+.insert-button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.insert-button-icon {
+    flex-grow: 1;
+    background-image: resource('Icons/IndieBuff_InsertCodeIcon');
+    width: 100%;
+    height: 100%;
+}
+
+.insert-button:active {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+.feedback-button {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.feedback-button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.feedback-button:active {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+.unity-foldout__content {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#ExecuteButton {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    padding-left: 4px;
+    height: 21px;
+    background-color: rgb(111, 66, 239);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    display: none;
+}
+
+#ExecuteButton:hover {
+    background-color: rgb(123, 82, 238);
+}
+
+#ExecuteButton:active {
+    background-color: rgb(112, 69, 238);
+}
+
+.command-container-holder {
+    border-top-width: 1px;
+    flex-direction: column;
+    background-color: rgb(63, 63, 63);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: rgba(210, 210, 210, 0.32);
+    border-top-color: rgba(210, 210, 210, 0.32);
+    border-bottom-color: rgba(210, 210, 210, 0.32);
+    border-left-color: rgba(210, 210, 210, 0.32);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 4px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.command-container {
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.command-button {
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 0;
+    margin-left: 4px;
+    padding-top: 1px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    background-color: rgb(106, 81, 120);
+}
+
+.command-button:hover {
+    background-color: rgb(114, 95, 125);
+}
+
+.command-button:active {
+    background-color: rgb(106, 81, 120);  
+}
+
+.check-icon {
+    background-image: resource('Icons/IndieBuff_CheckIcon');
+    width: 10px;
+    height: 10px;
+}

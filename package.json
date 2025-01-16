@@ -1,0 +1,20 @@
+{
+  "name": "com.LudiCore.aiassistant",
+  "displayName": "LudiCore AI Assistant",
+  "version": "2.1.1",
+  "unity": "2022.3",
+  "description": "LudiCore is your personal AI game dev assistant. Speedrun your game development with context aware suggestions, code, and more!",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "keywords": [
+    "AI",
+    "utilities",
+    "tools"
+  ],
+  "author": {
+    "name": "LudiCore",
+    "email": "contact@LudiCore.dev",
+    "url": "https://www.LudiCore.dev"
+  }
+}

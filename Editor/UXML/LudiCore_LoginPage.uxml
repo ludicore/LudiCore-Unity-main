@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="LoginPage" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+        <ui:VisualElement name="IndieBuffLogoContainer" style="flex-direction: row; align-items: center; margin-top: 15px; margin-bottom: 3px;">
+            <ui:VisualElement name="IBLogo" style="width: 48px; height: 68px; background-image: resource(&apos;Images/IndieBuff_LogoIcon&apos;); margin-top: 0; margin-right: 9px;" />
+            <ui:Label tabindex="-1" text="IndieBuff" parse-escape-sequences="true" display-tooltip-when-elided="true" name="IBLabel" style="-unity-font-definition: initial; -unity-font: resource(&apos;Fonts/IndieBuff_JockeyOne&apos;); font-size: 50px;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Your Game Dev Partner" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SpeedrunLabel" style="font-size: 16px; margin-bottom: 74px;" />
+        <ui:Button text="Login" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LoginButton" class="hover-button" style="width: 300px; height: 50px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; font-size: 24px; -unity-font-style: bold; align-self: auto;" />
+        <ui:Label tabindex="-1" text="Click to get started" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatusLabel" style="-unity-text-align: upper-center; font-size: 15px; margin-top: 4px;" />
+        <ui:VisualElement name="SocialsButtonGroup" style="flex-direction: row; margin-top: 98px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DiscordButton" class="social-button" style="align-items: center; justify-content: center;">
+                <ui:VisualElement name="DiscordIcon" class="social-button-icon" style="background-color: rgba(0, 0, 0, 0); width: 36px; height: 30px; background-image: resource(&apos;Icons/IndieBuff_DiscordIcon&apos;);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="LinkedInButton" class="social-button" style="align-items: center; justify-content: center;">
+                <ui:VisualElement name="LinkedInIcon" class="social-button-icon" style="background-color: rgba(0, 0, 0, 0); width: 30px; height: 30px; background-image: resource(&apos;Icons/IndieBuff_LinkedInIcon&apos;);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="XTwitterButton" class="social-button" style="align-items: center; justify-content: center;">
+                <ui:VisualElement name="XTwitterIcon" class="social-button-icon" style="background-color: rgba(0, 0, 0, 0); width: 30px; height: 30px; background-image: resource(&apos;Icons/IndieBuff_XTwitterIcon&apos;);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="TikTokButton" class="social-button" style="align-items: center; justify-content: center;">
+                <ui:VisualElement name="TikTokIcon" class="social-button-icon" style="background-color: rgba(0, 0, 0, 0); width: 30px; height: 30px; background-image: resource(&apos;Icons/IndieBuff_TikTokIcon&apos;);" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:Button text="Looking for our website? Click Here!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WebsiteButton" class="text-button" style="align-items: auto; align-self: center; margin-top: 56px;" />
+    </ui:VisualElement>
+</ui:UXML>

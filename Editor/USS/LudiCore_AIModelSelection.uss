@@ -1,0 +1,63 @@
+.ai-model-selection-button {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: auto;
+    align-items: center;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.ai-model-info-container {
+    flex-grow: 1;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ai-model-lock-icon {
+    flex-grow: 0;
+    background-image: resource('Icons/IndieBuff_LockIcon');
+    width: 15px;
+    height: 15px;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 10px;
+}
+
+.ai-model-label {
+    font-size: 12px;
+}
+
+.ai-model-selected-icon {
+    flex-grow: 0;
+    background-image: resource('Icons/IndieBuff_CheckIcon');
+    width: 15px;
+    height: 15px;
+}
+
+.ai-model-selection-container {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+}
+
+.selected {
+    background-color: #6F42EF;
+}

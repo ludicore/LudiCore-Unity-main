@@ -1,0 +1,73 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="TopBar" style="flex-grow: 1; height: auto; width: auto; min-height: 33px; align-items: center; justify-content: space-around; flex-direction: row; max-height: 33px;">
+        <ui:VisualElement name="ChatControlButtons" style="flex-grow: 1; flex-direction: row; position: absolute; left: 0;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewChatButton" tooltip="Start new chat" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;">
+                <ui:VisualElement name="NewChatIcon" class="button-icon" style="flex-grow: 1; width: 18px; height: 16px; align-items: flex-start; justify-content: center; align-self: center; -unity-text-align: middle-center; flex-direction: row; background-image: resource(&apos;Icons/IndieBuff_NewChatIcon&apos;);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatHistoryButton" tooltip="View Chat History" style="padding-top: 4px; padding-right: 0; padding-bottom: 4px; padding-left: 0;">
+                <ui:VisualElement name="ChatHistoryIcon" class="button-icon" style="flex-grow: 1; width: 34px; height: 16px; background-image: resource(&apos;Icons/IndieBuff_ChatHistoryIcon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="New Chat" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatName" style="height: 28px; width: auto; align-self: center; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; position: relative; left: auto; right: auto; overflow: hidden; max-width: 70%;" />
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProfileButton" tooltip="Profile Settings" style="padding-top: 4px; padding-right: 0; padding-bottom: 4px; padding-left: 0; position: absolute; right: 0;">
+            <ui:VisualElement name="ProfileIcon" class="button-icon" style="flex-grow: 1; width: 28px; height: 16px; background-image: resource(&apos;Icons/IndieBuff_ProfileButtonIcon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:ScrollView name="ReponseArea" class="section" style="width: auto; margin-bottom: 0; height: 100%; margin-top: 0; margin-right: 0; margin-left: 0; visibility: visible;" />
+    <ui:VisualElement name="ChatHistoryPanel" style="visibility: visible; z-index: 10; padding: 10px; overflow: visible; transition-timing-function: ease-out; transition-duration: 300ms; padding-right: 6px; padding-left: 6px; bottom: 133px;">
+        <ui:Label tabindex="-1" text="Conversations" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatHistoryLabel" style="margin-bottom: 8px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:ScrollView name="ChatHistoryScrollView" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="BottomBar" style="flex-grow: 0; justify-content: center; align-items: flex-start; height: auto; margin-left: 0; margin-right: 0; margin-bottom: 0; overflow: visible; min-height: 100px; margin-top: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-shrink: 0;">
+        <ui:VisualElement name="AddContextRoot" style="flex-grow: 0; flex-direction: row; align-items: center; align-self: auto; justify-content: space-between; width: 100%; padding-bottom: 8px; padding-top: 0; padding-right: 0; padding-left: 0;">
+            <ui:Button text="+ Context" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddContextButton" class="text-button" style="background-color: rgba(88, 88, 88, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
+            <ui:ProgressBar value="50" title="Parsing Context" name="LoadingBar" style="margin-top: 0; margin-right: 20px; margin-bottom: 0; margin-left: 20px; max-width: 450px; position: relative; align-self: center; width: 100%; flex-grow: 1; flex-shrink: 1;" />
+            <ui:Button text="Clear Context" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ClearContextButton" class="text-button" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="UserContextRoot" style="flex-grow: 0; width: 100%; flex-shrink: 1;">
+            <ui:VisualElement name="UserContextItems" style="flex-grow: 0; align-items: center; align-self: center; flex-direction: row; width: 100%; padding-bottom: 8px;">
+                <ui:ScrollView name="UserContextScrollView" style="flex-direction: row; flex-wrap: wrap; max-height: 90px; visibility: visible;">
+                    <ui:VisualElement name="UserContextContainer" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ChatWidget" style="height: auto; width: 100%; min-height: 40px; max-height: none; align-self: center; flex-grow: 1;">
+            <ui:VisualElement name="TextFieldRoot" class="section" style="flex-grow: 1; flex-direction: column; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; justify-content: center; min-height: 42px; align-items: stretch;">
+                <ui:VisualElement name="PlaceholderContent" style="flex-grow: 0; flex-direction: row; position: absolute; top: 0; bottom: 0; left: 12px; align-items: center; display: none;">
+                    <ui:Label tabindex="-1" text="" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlaceholderLabel" style="color: rgb(115, 115, 115);" />
+                </ui:VisualElement>
+                <ui:ScrollView name="ChatScrollArea" style="height: auto; width: auto; align-self: flex-start; align-items: center; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; max-height: 160px; justify-content: center;">
+                    <ui:TextField picking-mode="Ignore" multiline="true" focusable="true" readonly="false" name="ChatInputArea" style="flex-grow: 1; font-size: 12px; white-space: normal; min-height: 27px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); flex-shrink: 1; margin-right: 48px; margin-top: 2px; margin-bottom: 2px; margin-left: 4px;" />
+                </ui:ScrollView>
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="SendChatButton" style="justify-content: center; align-items: center; align-self: center; position: absolute; right: 19px; bottom: 6px; width: 32px; height: 32px;">
+                    <ui:VisualElement name="SendChatIcon" class="button-icon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_SendButtonIcon&apos;); width: 19px; height: 26px; -unity-background-scale-mode: scale-to-fit; display: flex;" />
+                    <ui:VisualElement name="StopChatIcon" class="button-icon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_StopIcon&apos;); width: 15px; height: 15px; -unity-background-scale-mode: scale-to-fit; display: none;" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ChatSettings" style="flex-grow: 0; flex-direction: row; width: 100%; justify-content: space-between; padding-top: 8px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatModeSelectButton" tooltip="Change Chat Mode" class="ai-model-select-button">
+                <ui:VisualElement name="ChatModeSelectIcon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_ModelSelectIcon&apos;); width: 10px; height: 10px; margin-right: 5px;" />
+                <ui:Label tabindex="-1" text="/chat" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatModeSelectLabel" />
+            </ui:Button>
+            <ui:RadioButtonGroup value="-1" name="ModeSelectGroup" style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; display: none;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChatModeButton" tooltip="Get chat/code help" class="mode-select-button">
+                    <ui:VisualElement name="ChatModeButtonIcon" class="mode-select-button-icon" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: resource(&apos;Icons/IndieBuff_ChatModeIcon&apos;);" />
+                </ui:Button>
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CommandModeButton" tooltip="Run engine commands" class="mode-select-button" style="margin-left: 5px;">
+                    <ui:VisualElement name="CommandModeButtonIcon" class="mode-select-button-icon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_CommandModeIcon&apos;);" />
+                </ui:Button>
+            </ui:RadioButtonGroup>
+            <ui:VisualElement name="UpgradeLabelContainer" style="flex-grow: 0; flex-direction: row; text-overflow: clip; overflow: hidden; margin-right: 3px; margin-left: 3px; position: relative; left: 0; right: 0; justify-content: center; align-items: center; align-self: flex-end;">
+                <ui:Label tabindex="-1" text="Liking IndieBuff?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="UpgradeTextLabel1" style="font-size: 9px; justify-content: center; align-items: center; -unity-text-align: middle-center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; color: rgb(123, 123, 123);" />
+                <ui:Button text="Upgrade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="UpgradeButton" class="upgrade-button" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 1px; padding-bottom: 0; padding-left: 1px; font-size: 9px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); color: rgb(111, 66, 239);" />
+                <ui:Label tabindex="-1" text="for more features and models!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="UpgradeTextLabel1" enable-rich-text="true" style="font-size: 9px; justify-content: center; align-items: center; -unity-text-align: middle-center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; color: rgb(123, 123, 123); text-overflow: ellipsis;" />
+            </ui:VisualElement>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="AIModelSelectButton" tooltip="Change AI model" class="ai-model-select-button">
+                <ui:VisualElement name="AIModelSelectIcon" style="flex-grow: 1; background-image: resource(&apos;Icons/IndieBuff_ModelSelectIcon&apos;); width: 10px; height: 10px; margin-right: 5px;" />
+                <ui:Label tabindex="-1" text="Base Model" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AIModelSelectLabel" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="PopupContainer" picking-mode="Ignore" style="flex-grow: 1; height: 100%; position: absolute; width: 100%;" />
+</ui:UXML>
