@@ -10,4 +10,4 @@ This version of the package is compatible with Unity Editor 2022.3 and later.
 
 # Notes
 
-LudiCore is still newly in development and actively evolving every single day. Your feedback is important to us, so feel free to join the [Discord](https://discord.com/invite/g3yccvZF7t) and let us know how to improve your experience!
+LudiCore is still newly in development and actively evolving every single day. Your feedback is important to us, so feel free to join the [Twitter](https://x.com/ludicoreai) and let us know how to improve your experience!
